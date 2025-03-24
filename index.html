@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>初音的小窝</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/loading.css">
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="css/back-to-top.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="dark-theme">
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <i class="fas fa-code"></i>
+                <span>初音的小窝</span>
+            </a>
+            <div class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home"><i class="fas fa-home"></i> 首页</a></li>
+                <li><a href="#competitions"><i class="fas fa-trophy"></i> 竞赛</a></li>
+                <li><a href="#articles"><i class="fas fa-book"></i> 文章</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> 联系</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 首页部分 -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="particles"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="avatar">
+                        <img data-src="images/avatar.jpg" alt="头像">
+                    </div>
+                    <h1>欢迎来到初音的小窝</h1>
+                    <p class="subtitle">全栈开发工程师 | CTF爱好者 | 安全研究员</p>
+                    <div class="hero-buttons">
+                        <a href="#competitions" class="cta-button primary">竞赛经历</a>
+                        <a href="#contact" class="cta-button secondary">联系我</a>
+                    </div>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">20+</span>
+                        <span class="stat-label">技术文章</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">竞赛奖项</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">年安全经验</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 竞赛经历部分 -->
+    <section id="competitions" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>竞赛经历</h2>
+                <div class="section-line"></div>
+                <p class="section-description">我参加过多项信息安全和CTF比赛，以下是部分获奖经历</p>
+            </div>
+            <div class="cards-grid">
+                <!-- 竞赛卡片将通过JavaScript动态加载 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 技术文章部分 -->
+    <section id="articles" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>技术文章</h2>
+                <div class="section-line"></div>
+                <p class="section-description">这些是我撰写的一些技术文章，点击即可查看完整内容</p>
+            </div>
+            <div class="cards-grid">
+                <!-- 文章卡片将通过JavaScript动态加载 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系部分 -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>联系我</h2>
+                <div class="section-line"></div>
+                <p class="section-description">如果您有任何问题或合作意向，可以通过以下方式联系我</p>
+            </div>
+            
+            <!-- 社交媒体联系方式 -->
+            <div class="contact-social">
+                <!-- 联系方式将通过JavaScript动态加载 -->
+            </div>
+            
+            <!-- 联系表单 -->
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name">您的姓名</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">您的邮箱</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">您的留言</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">发送消息</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-code"></i>
+                    <span>初音的小窝</span>
+                </div>
+                <p class="copyright">© 2023 初音的小窝 - 保留所有权利</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 返回顶部按钮 -->
+    <button id="back-to-top" class="back-to-top" title="返回顶部">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- 主题切换按钮 -->
+    <button id="theme-toggle" class="theme-toggle" title="切换主题">
+        <i class="fas fa-sun"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
